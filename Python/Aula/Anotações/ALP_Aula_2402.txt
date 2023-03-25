@@ -1,0 +1,41 @@
+amostragem: .sample
+para fazer gráfico pega o arquivo e comando .plot(kind='barth', figsize='')
+kind = tipo barra horizontal
+query comando do pandas que tira uma informação específica de uma geral(ex: amazonas é o geral ele tira
+manaus)
+.to_cvs() salva dados
+https://colab.research.google.com/
+import biblioteca*
+dir(bibliteca) aparece tudo que tem na biblioteca em questão
+funções de uma biblioteca pra dados aleatórios: são todas as q aparecem após o dir e são escritos com letras minusculas normal
+help(nomebiblioteca.nomefunção)
+ex:help(random.randint) e explica oq é
+alt+p
+cmv: pip install pandas
+bibliotecas python: https://pypi.org/
+-------
+1 1 2 3 5 8 13 21 34 55
+n 1 2 3 4 5 6 7 8 9 -> devolve sempre um elemento
+
+a=1
+b=1
+fn = int(input('Escreva o número de Fibonacci:'))
+a    b   a+b
+1    1   2
+1    2   3
+2    3   5
+a,b = b,a+b
+while contador <= n-2:
+    print('Seu número de fibonacci é: ',a,b = b,a+b)
+--------------
+a = 21
+b = 15
+a%b
+mesma coisa ultimo exercicio: a , b = b , a%b
+quando a%b = 0 o mdc(a,b) é o b
+
+a = int(input(' a:'))
+b = int(input(' b:'))
+while a%b != 0:
+    a,b = b,a%b
+    print(b)

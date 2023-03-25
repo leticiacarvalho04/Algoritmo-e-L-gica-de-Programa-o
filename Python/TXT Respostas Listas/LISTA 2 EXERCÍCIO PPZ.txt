@@ -1,0 +1,93 @@
+EXERCÍCIO 1:
+a = int(input("Digite o valor do lado 1 de um triângulo: "))
+b = int(input("Digite o valor do lado 2 de um triângulo: "))
+c = int(input("Digite o valor do lado 3 de um triângulo: "))
+if a<b+c and b<a+c and c<a+b:
+    if a==b==c:
+        print('Seu triângulo é um equilátero')
+    elif a==b or b==c or c==a:
+        print('Seu triângulo é isósceles')
+    else:
+        print('Seu triângulo é escaleno')
+else:
+    print("A forma informada não se trata de um triângulo")
+------------------------------------------------------------------------------
+EXERCÍCIO 2:
+def isleap(ano):
+    return ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0)
+ano = int(input("Qual o ano em questão? "))
+if ano == 4:
+    print('O ano em questão é um ano bissexto')
+else:
+    print('O ano em questão NÃO é bissexto')
+
+------------------------------------------------------------------------------
+EXERCÍCIO 3:
+peso = int(input('Quantos quilos de peixe você está portando? '))
+if peso > 50:
+    multa = 4*peso
+    print('Você ultrapassou o limite e deverá pagar uma multa de R$',multa)
+else:
+    print('Não houve excesso de peso')
+
+---------------------------------------------------------------------------------
+EXERCÍCIO 4:
+a = int(input('Digite o primeiro número: '))
+b = int(input('Digite o segundo número: '))
+c = int(input('Digite o terceiro número: '))
+amaior = c < a > b
+bmaior = a < b > c
+cmaior = a < c > b
+if amaior:
+    print('O maior número é ', a)
+if bmaior:
+    print('O maior número é ', b)
+if cmaior:
+    print('O maior número é ', c)
+--------------------------------------------------------------------------------
+EXERCÍCIO 5:
+a = int(input('Digite o primeiro número: '))
+b = int(input('Digite o segundo número: '))
+c = int(input('Digite o terceiro número: '))
+amaior = c < a > b
+bmaior = a < b > c
+cmaior = a < c > b
+amenor = c > a < b
+bmenor = a > b < c
+if amaior:
+    print('O maior número é ', a)
+elif amenor:
+    print('O menor número é ', a)
+if bmaior:
+    print('O maior número é ', b)
+elif bmenor:
+    print('O menor número é ', b)
+if cmaior:
+    print('O maior número é ', c)
+else:
+    print('O menor número é ', c)
+---------------------------------------------------------------------------------
+EXERCÍCIO 6:
+gph = float(input('Informe seu ganho por hora: R$'))
+htm = float(input('Informe o número de horas trabalhadas no mês: '))
+salariob = gph * htm * 30
+ir = salariob * 11/100
+inss = salariob * 8/100
+sindicato = salariob * 5/100
+descontos = ir + inss + sindicato 
+salariol = salariob - descontos
+print('Seu salário bruto é de: R$',salariob)
+print('Valor do imposto de renda: R$',ir)
+print('Valor de inss: R$',inss)
+print('Valor do sindicato: R$',sindicato)
+print('Seu sálario líquido é de R$',salariol)
+---------------------------------------------------------------------------------
+EXERCÍCIO 7:
+metros = int(input("Qual o tamanho da área em metros quadrados? "))
+if metros%54==0:
+    litros=metros/54
+else:
+    litros = int(metros/54)+1
+valor=litros*80
+print(f'Quantidade de litros: {litros} l')
+print(f'Preço total: R$ {valor:.2f}')

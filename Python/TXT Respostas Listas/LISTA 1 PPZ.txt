@@ -1,0 +1,65 @@
+Exercício 1:
+numero1 = int(input("Digite seu primeiro número: "))
+numero2 = int(input("Digite seu segundo número: "))
+soma = numero1 + numero2
+print("A soma dos números acima é: ",soma)
+
+Exercício 2:
+metro = float(input("Digite o valor em metros: "))
+conversao = metro*1000
+print("A conversão em milímetros do número acima fornecido é: ", conversao, "mm")
+
+Exercício 3:
+segundos = int(input("Digite a quantia de segundos do usuário: "))
+minutos = int(input("Digite a quantia de minutos do usuário: "))
+horas = int(input("Digite a quantia de horas do usuário: "))
+dias = int(input("Digite a quantia de dias do usuário: "))
+print("O tempo total informado foi: ", dias,"dia(s), ", horas,"h",minutos,"min e ",segundos,"s")
+calculo = segundos+(60*minutos)+(60*60*horas)+(dias*24*60*60)
+print("O total de segundos do usuário durante este período é: ",calculo)
+
+Exercício 4:
+salario = float(input("Informe o salário atual: R$"))
+porcentagem = int(input("Informe a porcentagem do aumento: "))
+aumento = salario*porcentagem/100
+print("Seu novo salário será de: R$", salario + aumento)
+
+Exercício 5:
+preco = float(input("Digite o valor da mercadoria: R$"))
+percentual = float(input("Digite o percentual de desconto: "))
+calculo = preco*percentual/100
+precofinal = preco-calculo
+print("O preço a pagar será de: R$"), precofinal)
+
+Exercício 6:
+distancia = float(input("Digite a distância a percorrer em km: "))
+velocidade = float(input("Digite a velocidade média (km/h) esperada: "))
+print("O tempo da sua viagem será de: ",distancia/velocidade,"h")
+
+Exercício 7:
+celsius = float(input("Escreva quantos graus celsius quer converter: "))
+conversao = 9*celsius/5+32
+print("A conversão para Fahrenheit é: ",conversao)
+
+Exercício 8:
+fahrenheit = float(input("Informe quantos graus Fahrenheit deseja converter: "))
+conversao = fahrenheit-32*5/9
+print("A conversão de graus Fahrenheit para Celsius é de: ",conversao,"°")
+
+Exercício 9:
+percorridos = float(input("Informe a quantia de quilometros percorridos pelo carro alugado: "))
+dias = float(input("Informe a quantia de dias pelos quais o carro foi alugado: "))
+preco = (60*dias)+(15/100*percorridos)
+print("O preço final a ser pago será de: R$",preco)
+
+Exercício 10:
+cigarros = int(input("Informe a quantidade de cigarros fumados por dia: "))
+anos = int(input("Informe há quantos anos utiliza o cigarro: "))
+perda = cigarros*anos*365/144
+print(f'Você perdeu {perda: .0f} dias')
+
+Exercício 11:
+import sys
+sys.set_int_max_str_digits(0) 
+conversao = len(str(2**1000000))
+print("O número de algarismos na operação 2 elevaod a 1.000.000 é: ",conversao)

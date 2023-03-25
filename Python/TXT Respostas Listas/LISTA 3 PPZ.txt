@@ -1,0 +1,51 @@
+EXERCÍCIO 1:
+while True:
+    n = int(input('Escreva um número entre 0 e 10: '))
+    if n in range(0,10):
+        print('Valor válido')
+        break
+    if 0 <= n >=10:
+        print('Número inválido! Digite novamente')
+        continue
+ ----------------------------------------------------------------------------
+
+EXERCÍCIO 2:
+while True:
+    nome = input('Digite o nome de usuário: ')
+    senha = input('Digite a sua senha: ')
+    if nome == senha:
+        print('A senha não pode ser igual ao nome do usuário. Faça novamente: ')
+        continue
+    else:
+        print('Senha e usuário aceitos')
+        break
+----------------------------------------------------------------------------
+
+EXERCÍCIO 3:
+popA, popB, anos = 80000, 200000, 0
+cresA, cresB = 0.03, 0.015 # Crescimentos de 3% e 1,5% ao ano
+while (popA < popB):
+    anos += 1 #anos = anos + 1
+    popA = popA + (popA * cresA)
+    popB = popB + (popB * cresB)
+    print("Após %i anos o país A ultrapassou o país B em número de habitantes." % anos)
+    print("País A: %.0f" % popA)
+    print("País B: %.0f" % popB)
+----------------------------------------------------------------------------
+
+EXERCÍCIO 4:
+fn = int(input('Escreva o número de Fibonacci:'))
+a,b = 1,1
+contador = 1
+while contador <= fn-2:
+    a,b = b, a+b
+    contador = contador + 1
+print(b)
+--------------------------------------------------------------------------
+
+EXERCÍCIO 5:
+a = int(input('Digite a: '))
+b = int(input('Digite b: '))
+while a%b != 0:
+    a,b = b,a%b
+print(f'mdc: {b}')

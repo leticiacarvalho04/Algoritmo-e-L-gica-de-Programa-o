@@ -1,0 +1,76 @@
+EXERCÍCIO 1:
+import random
+vetor = random.sample(range(100),10)
+maior = menor = 0
+for x in vetor[1:]:
+    if x > maior: maior = x
+    if x < menor: menor = x
+print('Vetor:', vetor)
+print(f'Maior: {maior}')
+print(f'Menor: {menor}')
+-----------------------------------------------------------
+EXERCÍCIO 2:
+from random import sample
+vetor = sample(range(100),20)
+par = [x for x in vetor if x % 2 == 0]
+impar = [x for x in vetor if x % 2 == 1]
+
+for x in vetor:
+    if x % 2 == 0:
+        par.append(x)
+    else:
+        impar.append(x)
+print ('Vetor', vetor)
+print ('Pares', par)
+print ('Ímpares', impar)
+----------------------------------------------------------
+EXERCÍCIO 3:
+import random
+vetor1 = random.sample(range(100),10)
+vetor2 = random.sample(range(100),10)
+vetor3 = []
+for x in range(10):
+    vetor3.append(vetor1[x])
+    vetor3.append(vetor2[x])
+print(f'Vetor 1: {vetor1}')
+print(f'Vetor 2: {vetor2}')
+print(f'Vetor 3: {vetor3}')
+----------------------------------------------------------
+EXERCÍCIO 4:
+frase ='''The Python Software Foundation and the global Python
+community welcome and encourage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help
+each other live up to these principles. We want our community to be more
+diverse: whoever you are, and whatever your background, we welcome you'''
+
+frase = frase.lower()
+frase = frase.replace(',',' ')
+frase = frase.replace('.',' ')
+frase = frase.replace(':',' ')
+frase= frase.split()
+lista = []
+for p in frase:
+    if p[0] in 'python' or p[-1] in 'python':
+        lista.append(p)
+print(f'Lista com a frase: {lista}')
+-------------------------------------------------------------
+EXERCÍCIO 5:
+frase ='''The Python Software Foundation and the global Python
+community welcome and encourage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help
+each other live up to these principles. We want our community to be more
+diverse: whoever you are, and whatever your background, we welcome you'''
+
+frase = frase.lower()
+frase = frase.replace(',',' ')
+frase = frase.replace('.',' ')
+frase = frase.replace(':',' ')
+frase= frase.split()
+lista = []
+for p in frase:
+    for l in p:
+        if l in 'python':
+            if p not in lista:
+                lista.append(p)
+print(f'Lista com a frase: {lista}')
+--------------------------------------------------------------
